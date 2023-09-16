@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F5E7"
+    tools:context=".isosceles">
+
+    <Button
+        android:id="@+id/btn_regresar_isosceles"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#000000"
+        android:onClick="Regresar_triangulo_menu"
+        android:text="@string/button_regresar"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_resultado_per_sem_isosceles" />
+
+    <TextView
+        android:id="@+id/txt_resultado_per_sem_isosceles"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/txt_resultado"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/btn_calcular_per_sem_isosceles"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup4" />
+
+    <Button
+        android:id="@+id/btn_calcular_per_sem_isosceles"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FFEB3B"
+        android:onClick="Calcular_per_semiper_isosceles"
+        android:text="@string/button_calcular"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup4" />
+
+    <EditText
+        android:id="@+id/et_lado_b_isosceles"
+        android:layout_width="99dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:hint="@string/editText_ladoB"
+        android:inputType="number"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_lado_a_isosceles" />
+
+    <EditText
+        android:id="@+id/et_lado_c_isosceles"
+        android:layout_width="99dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:hint="@string/editText_ladoC"
+        android:inputType="number"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_lado_b_isosceles" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_lado_c_isosceles">
+
+        <RadioButton
+            android:id="@+id/rb_perimetro_isosceles"
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:text="@string/rbt_perimetro"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/rb_semiperimetro_isosceles"
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:text="@string/rbt_semiperimetro"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/et_lado_a_isosceles"
+        android:layout_width="99dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/editText_ladoA"
+        android:inputType="number"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/txt_perimetro_semiperimetro_triangulo"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_resultado_area_isosceles" />
+
+    <EditText
+        android:id="@+id/et_altura_h_isosceles"
+        android:layout_width="99dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:hint="@string/editText_altura"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_base_b_isosceles" />
+
+    <Button
+        android:id="@+id/btn_calcular_area_isosceles"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#FFEB3B"
+        android:onClick="Calcular_area_isosceles"
+        android:text="@string/button_calcular"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_altura_h_isosceles" />
+
+    <TextView
+        android:id="@+id/txt_resultado_area_isosceles"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/txt_resultado"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/btn_calcular_area_isosceles"
+        app:layout_constraintTop_toBottomOf="@+id/et_altura_h_isosceles" />
+
+    <EditText
+        android:id="@+id/et_base_b_isosceles"
+        android:layout_width="99dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="@string/editText_base"
+        android:inputType="number"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/txt_area_triangulo"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="130dp"
+        android:layout_height="126dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/isosceles" />
+</androidx.constraintlayout.widget.ConstraintLayout>

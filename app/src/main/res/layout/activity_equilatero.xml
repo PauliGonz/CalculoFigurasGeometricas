@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F5E7"
+    tools:context=".equilatero">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="130dp"
+        android:layout_height="126dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/equilatero" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/txt_area_triangulo"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <EditText
+        android:id="@+id/et_base_b_equilatero"
+        android:layout_width="99dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="@string/editText_base"
+        android:inputType="number"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <Button
+        android:id="@+id/btn_calcular_area_equilatero"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#FFEB3B"
+        android:onClick="Calcular_area_equilatero"
+        android:text="@string/button_calcular"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_altura_h_equilatero" />
+
+    <TextView
+        android:id="@+id/txt_resultado_area_equilatero"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/txt_resultado"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/btn_calcular_area_equilatero"
+        app:layout_constraintTop_toBottomOf="@+id/et_altura_h_equilatero" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/txt_perimetro_semiperimetro_triangulo"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_resultado_area_equilatero" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_lado_c_equilatero">
+
+        <RadioButton
+            android:id="@+id/rb_perimetro_equilatero"
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:text="@string/rbt_perimetro"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/rb_semiperimetro_equilatero"
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:text="@string/rbt_semiperimetro"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/et_lado_a_equilatero"
+        android:layout_width="99dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/editText_ladoA"
+        android:inputType="number"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <EditText
+        android:id="@+id/et_lado_b_equilatero"
+        android:layout_width="99dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:hint="@string/editText_ladoB"
+        android:inputType="number"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_lado_a_equilatero" />
+
+    <Button
+        android:id="@+id/btn_calcular_per_sem_equilatero"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FFEB3B"
+        android:onClick="Calcular_per_semiper_equilatero"
+        android:text="@string/button_calcular"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup4" />
+
+    <TextView
+        android:id="@+id/txt_resultado_per_sem_equilatero"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/txt_resultado"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/btn_calcular_per_sem_equilatero"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup4" />
+
+    <Button
+        android:id="@+id/btn_regresar_equilatero"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#000000"
+        android:onClick="Regresar_triangulo_menu"
+        android:text="@string/button_regresar"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_resultado_per_sem_equilatero" />
+
+    <EditText
+        android:id="@+id/et_altura_h_equilatero"
+        android:layout_width="99dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:hint="@string/editText_altura"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_base_b_equilatero" />
+
+    <EditText
+        android:id="@+id/et_lado_c_equilatero"
+        android:layout_width="99dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:hint="@string/editText_ladoC"
+        android:inputType="number"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_lado_b_equilatero" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">CalculoFigurasGeometricas</string>
+    <string name="button_regresar">Regresar</string>
+    <string name="button_calcular">Calcular</string>
+    <string name="button_cuadrado">Cuadrado</string>
+    <string name="button_rectangulo">Rectángulo</string>
+    <string name="button_circulo">Círculo</string>
+    <string name="button_triangulo">Triángulo</string>
+    <string name="txt_menu">Menú</string>
+    <string name="txt_resultado">Resultado</string>
+    <string name="txt_area_triangulo">Calcular el Área</string>
+    <string name="txt_perimetro_semiperimetro_triangulo">Calcular el Perímetro y semiperímetro</string>
+    <string name="txt_lado_a">a</string>
+    <string name="txt_lado_b">b</string>
+    <string name="txt_lado_h">h</string>
+    <string name="txt_seleccion">Seleccione una figura Geométrica</string>
+    <string name="txt_seleccion_triangulo">Seleccione un triángulo</string>
+    <string name="txt_cuadrado">Ingrese los siguientes datos</string>
+    <string name="txt_rectangulo">Ingrese los siguientes datos</string>
+    <string name="txt_circulo">Ingrese los siguientes datos</string>
+    <string name="txt_triangulo">Ingrese los siguientes datos</string>
+    <string name="editText_ladoA">Lado a</string>
+    <string name="editText_ladoB">Lado b</string>
+    <string name="editText_ladoC">Lado c</string>
+    <string name="editText_base">Base b</string>
+    <string name="editText_altura">Altura h</string>
+    <string name="editText_radio">Radio r</string>
+    <string name="rbt_area">Área</string>
+    <string name="rbt_diagonal">Diagonal</string>
+    <string name="rbt_perimetro">Perímetro</string>
+    <string name="rbt_semiperimetro">Semiperímetro</string>
+    <string name="rbt_longuitud">Longuitud</string>
+    <string name="rbt_diametro">Diámetro</string>
+    <string name="rbt_triangulo_equilatero">Equilátero</string>
+    <string name="rbt_triangulo_isosceles">Isósceles</string>
+    <string name="rbt_triangulo_escaleno">Escaleno</string>
+</resources>
